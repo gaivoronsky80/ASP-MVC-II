@@ -1,0 +1,12 @@
+@model Simple_Login_Registration.Models.Login
+
+<h1>Login:</h1>
+<form asp-action="feechUser" asp-controller="Home" method="post">
+	<span asp-validation-for="LEmail"></span>
+	<label asp-for="LEmail">Email:</label>
+	<input asp-for="LEmail">
+	<span asp-validation-for="LPassword"></span>
+	<label asp-for="LPassword">Password</label>
+	<input asp-for="LPassword">
+	<button type="submit">Login</button>
+</form>

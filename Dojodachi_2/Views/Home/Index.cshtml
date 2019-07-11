@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Dojodachi!</title>
+    <script src="~/js/dojodachi.js" ></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="status">
+            <p>Fullness: <span id="fullness">0</span></p>
+            <p>Happiness: <span id="happiness">0</span></p>
+            <p>Meal: <span id="meals">0</span></p>
+            <p>Energy: <span id="energy">0</span> </p>
+        </div>
+        <div class="dachi_container">
+            <img src="~/img/chibibunnyFlipped.jpeg" id="bunny">
+            <img src="~/img/rip.jpg" id="rip">
+            <img src="~/img/happy.jpg" id="happy">
+            <img src="~/img/carrot.png" id="carrot" class="action">
+            <img src="~/img/ball.png" id="ball" class="action">
+            <img src="~/img/briefcase.png" id="briefcase" class="action">
+            <img src="~/img/sleep.png" id="sleep" class="action">
+            <p id="message"></p>
+        </div>
+        <div class="action_buttons">
+            <button id="feedBtn">Feed</button>
+            <button id="playBtn">Play</button>
+            <button id="workBtn">Work</button>
+            <button id="sleepBtn">Sleep</button>
+        </div>
+        <div class="restartContainer">
+            <button id="restart">Restart?</button>
+        </div>
+    </div>
+</body>
+</html>

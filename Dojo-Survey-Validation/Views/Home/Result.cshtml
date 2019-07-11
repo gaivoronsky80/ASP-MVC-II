@@ -1,0 +1,13 @@
+@model Dojo_Survey_Validation.Models.Form
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/style_index.css"/>
+
+<div class="container info">
+    <h2>Submitted Info</h2>
+    <p>Name: @Model.Name</p>
+    <p>Dojo Location: @Model.Location</p>
+    <p>Favorite Language: @Model.Language</p>
+    <p>Comment: @Model.Comment</p>
+    <a href="/"><button class="btn btn-dark submit">Go Back</button></a>
+</div>

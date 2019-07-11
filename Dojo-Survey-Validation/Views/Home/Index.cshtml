@@ -1,0 +1,36 @@
+﻿@model Dojo_Survey_Validation.Models.Form
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/style_index.css"/>
+
+<div class="container form">
+    <form asp-action="Create" asp-controller="Home" method="post">
+        <div class="form-group">
+            <span asp-validation-for="Name"></span>
+            <label asp-for="Name">Name:</label> 
+            <input type="text" asp-for="Name" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <span asp-validation-for="Location"></span>
+            <label asp-for="Location">Dojo Location:</label> 
+            <select asp-for="Location" class="form-control">
+				<option value="San Jose" class="form-control">San Jose</option>
+				<option value="Bellevue" class="form-control">Bellevue</option>
+			</select>
+        </div>
+        <div class="form-group">
+            <span asp-validation-for="Language"></span>
+            <label asp-for="Language">Favorite Language:</label> 
+            <select asp-for="Language" class="form-control">
+				<option value="Python" class="form-control">Python</option>
+				<option value="C#" class="form-control">C#</option>
+			</select>
+        </div>
+        <div class="form-group">
+            <span asp-validation-for="Comment"></span>
+            <label asp-for="Comment">Comment:</label> 
+            <textarea asp-for="Comment" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark submit">Button</button>
+    </form>
+</div>

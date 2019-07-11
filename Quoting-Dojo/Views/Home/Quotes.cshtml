@@ -1,0 +1,14 @@
+
+@using Quoting_Dojo.Models
+@model List<Dictionary<string,object>>
+
+<div class="container">
+	<h1>Here are some awesome quotes!</h1>
+
+	@foreach (var quote in Model)
+	{
+		<p>"@quote["Quote"]"</p>
+		<p>- @quote["Name"] at @quote["created_at"]</p>
+	}
+
+</div>

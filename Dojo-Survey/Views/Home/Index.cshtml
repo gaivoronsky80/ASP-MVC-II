@@ -1,0 +1,32 @@
+﻿@model Dojo_Survey.Models.DojoForm
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/style_index.css"/>
+
+<div class="container form">
+    <form action="/result" method="post">
+        <div class="form-group">
+            <label>Your Name:</label> 
+            <input type="text" name="Name" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label>Dojo Location:</label> 
+            <select class="form-control" name="Location">
+                <option value="San Jose" class="form-control">San Josr</option>
+                <option value="Bellevue" class="form-control">Bellevue</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Favorite Language:</label> 
+            <select class="form-control" name="Language">
+                <option value="C#" class="form-control">C#</option>
+                <option value="Python" class="form-control">Python</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Comment (optional):</label>
+            <textarea name="Comment" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark submit">Submit</button>
+    </form>
+</div>

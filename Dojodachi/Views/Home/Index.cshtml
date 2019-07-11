@@ -1,0 +1,32 @@
+﻿<ul class="status">
+	<li>Fullness: @ViewBag.Fullness</li>
+	<li>Happiness: @ViewBag.Happiness</li>
+	<li>Meals: @ViewBag.Meals</li>
+	<li>Energy: @ViewBag.Energy</li>
+</ul>
+
+<h1>Dojodachi</h1>
+
+@if (ViewBag.Over != null && ViewBag.Over && ViewBag.Win)
+{
+	<p>YOU WIN</p>
+} else if (ViewBag.Over != null && ViewBag.Over)
+{
+	<p>Sorry, you lost</p>
+}
+
+<p>@ViewBag.Log</p>
+
+<ul class="actions">
+	@if (ViewBag.Over != null && ViewBag.Over)
+	{
+		<li><a href="/restart">Restart?</a></li>
+	}
+	else
+	{
+		<li><a href="/feed">Feed</a></li>
+		<li><a href="/play">Play</a></li>
+		<li><a href="/work">Work</a></li>
+		<li><a href="/sleep">Sleep</a></li>
+	}
+</ul>
